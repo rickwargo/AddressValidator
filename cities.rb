@@ -1,0 +1,220 @@
+Cities = []; 1.upto(67) { |m| Cities[m] = Array.new }
+Zips = Hash.new { |h,k| h[k] = [] }
+
+Cities[1] << 'AMBLER'; Zips['AMBLER'] << 19002
+Cities[2] << 'BRIDGEPORT'; Zips['BRIDGEPORT'] << 19405
+Cities[2] << 'KING OF PRUSSIA'; Zips['KING OF PRUSSIA'] << 19406
+Cities[3] << 'BRYN ATHYN'; Zips['BRYN ATHYN'] << 19009
+Cities[3] << 'HUNTINGDON VALLEY'; Zips['HUNTINGDON VALLEY'] << 19006
+Cities[4] << 'COLLEGEVILLE'; Zips['COLLEGEVILLE'] << 19426
+Cities[5] << 'CONSHOHOCKEN'; Zips['CONSHOHOCKEN'] << 19428
+Cities[6] << 'EAST GREENVILLE'; Zips['EAST GREENVILLE'] << 18041
+Cities[7] << 'GREEN LANE'; Zips['GREEN LANE'] << 18054
+Cities[8] << 'HATBORO'; Zips['HATBORO'] << 19040
+Cities[9] << 'HATFIELD'; Zips['HATFIELD'] << 19440
+Cities[10] << 'JENKINTOWN'; Zips['JENKINTOWN'] << 19046
+Cities[11] << 'LANSDALE'; Zips['LANSDALE'] << 19446
+Cities[12] << 'NARBERTH'; Zips['NARBERTH'] << 19072
+Cities[13] << 'NORRISTOWN'; Zips['NORRISTOWN'] << 19401
+Cities[13] << 'NORRISTOWN'; Zips['NORRISTOWN'] << 19403
+Cities[14] << 'NORTH WALES'; Zips['NORTH WALES'] << 19454
+Cities[15] << 'PENNSBURG'; Zips['PENNSBURG'] << 18073
+Cities[16] << 'POTTSTOWN'; Zips['POTTSTOWN'] << 4874
+Cities[17] << 'RED HILL'; Zips['RED HILL'] << 18076
+Cities[18] << 'JENKINTOWN'; Zips['JENKINTOWN'] << 19046
+Cities[18] << 'ROCKLEDGE'; Zips['ROCKLEDGE'] << 19046
+Cities[19] << 'ROYERSFORD'; Zips['ROYERSFORD'] << 19468
+Cities[20] << 'SCHWENKSVILLE'; Zips['SCHWENKSVILLE'] << 19473
+Cities[21] << 'SOUDERTON'; Zips['SOUDERTON'] << 18964
+Cities[22] << 'TELFORD'; Zips['TELFORD'] << 18969
+Cities[23] << 'COLLEGEVILLE'; Zips['COLLEGEVILLE'] << 19426
+Cities[23] << 'TRAPPE'; Zips['TRAPPE'] << 19426
+Cities[24] << 'WEST CONSHOHOCKEN'; Zips['WEST CONSHOHOCKEN'] << 19428
+Cities[30] << 'ABINGTON'; Zips['ABINGTON'] << 19001
+Cities[30] << 'ELKINS PARK'; Zips['ELKINS PARK'] << 19027
+Cities[30] << 'GLENSIDE'; Zips['GLENSIDE'] << 19038
+Cities[30] << 'HUNTINGDON VALLEY'; Zips['HUNTINGDON VALLEY'] << 19006
+Cities[30] << 'JENKINTOWN'; Zips['JENKINTOWN'] << 19046
+Cities[30] << 'ROSLYN'; Zips['ROSLYN'] << 19001
+Cities[30] << 'WILLOW GROVE'; Zips['WILLOW GROVE'] << 19090
+Cities[31] << 'CHELTENHAM'; Zips['CHELTENHAM'] << 19012
+Cities[31] << 'CHELTENHAM'; Zips['CHELTENHAM'] << 19027
+Cities[31] << 'ELKINS PARK'; Zips['ELKINS PARK'] << 19027
+Cities[31] << 'GLENSIDE'; Zips['GLENSIDE'] << 19038
+Cities[31] << 'JENKINTOWN'; Zips['JENKINTOWN'] << 19046
+Cities[31] << 'LAMOTT'; Zips['LAMOTT'] << 19027
+Cities[31] << 'LAVEROCK'; Zips['LAVEROCK'] << 19038
+Cities[31] << 'MELROSE PARK'; Zips['MELROSE PARK'] << 19027
+Cities[31] << 'WYNCOTE'; Zips['WYNCOTE'] << 19095
+Cities[32] << 'BARTO'; Zips['BARTO'] << 19504
+Cities[32] << 'BECHTELSVILLE'; Zips['BECHTELSVILLE'] << 19505
+Cities[32] << 'BOYERTOWN'; Zips['BOYERTOWN'] << 19512
+Cities[32] << 'GILBERTSVILLE'; Zips['GILBERTSVILLE'] << 19525
+Cities[32] << 'GILBERTSVL'; Zips['GILBERTSVL'] << 19525
+Cities[32] << 'POTTSTOWN'; Zips['POTTSTOWN'] << 19464
+Cities[33] << 'EAST NORRITON'; Zips['EAST NORRITON'] << 19401
+Cities[33] << 'EAST NORRITON'; Zips['EAST NORRITON'] << 19403
+Cities[33] << 'NORRISTOWN'; Zips['NORRISTOWN'] << 19401
+Cities[33] << 'NORRISTOWN'; Zips['NORRISTOWN'] << 19403
+Cities[34] << 'HARLEYSVILLE'; Zips['HARLEYSVILLE'] << 19438
+Cities[34] << 'SOUDERTON'; Zips['SOUDERTON'] << 18964
+Cities[34] << 'TELFORD'; Zips['TELFORD'] << 18969
+Cities[35] << 'COLMAR'; Zips['COLMAR'] << 18915
+Cities[35] << 'HATFIELD'; Zips['HATFIELD'] << 19440
+Cities[35] << 'LANSDALE'; Zips['LANSDALE'] << 19446
+Cities[35] << 'SOUDERTON'; Zips['SOUDERTON'] << 18964
+Cities[36] << 'AMBLER'; Zips['AMBLER'] << 19002
+Cities[36] << 'CHALFONT'; Zips['CHALFONT'] << 18914
+Cities[36] << 'HATBORO'; Zips['HATBORO'] << 19040
+Cities[36] << 'HORSHAM'; Zips['HORSHAM'] << 19044
+Cities[36] << 'MAPLE GLEN'; Zips['MAPLE GLEN'] << 19002
+Cities[36] << 'NORTH WALES'; Zips['NORTH WALES'] << 19454
+Cities[37] << 'LIMERICK'; Zips['LIMERICK'] << 19468
+Cities[37] << 'LINFIELD'; Zips['LINFIELD'] << 19468
+Cities[37] << 'POTTSTOWN'; Zips['POTTSTOWN'] << 19464
+Cities[37] << 'ROYERSFORD'; Zips['ROYERSFORD'] << 19468
+Cities[37] << 'SCHWENKSVILLE'; Zips['SCHWENKSVILLE'] << 19473
+Cities[38] << 'PERKIOMENVILLE'; Zips['PERKIOMENVILLE'] << 18074
+Cities[38] << 'SCHWENKSVILLE'; Zips['SCHWENKSVILLE'] << 19473
+Cities[38] << 'SPRING MOUNT'; Zips['SPRING MOUNT'] << 19478
+Cities[38] << 'ZIEGLERVILLE'; Zips['ZIEGLERVILLE'] << 19492
+Cities[39] << 'AMBLER'; Zips['AMBLER'] << 19002
+Cities[39] << 'BLUE BELL'; Zips['BLUE BELL'] << 19422
+Cities[39] << 'GWYNEDD'; Zips['GWYNEDD'] << 19436
+Cities[39] << 'GWYNEDD VALLEY'; Zips['GWYNEDD VALLEY'] << 19437
+Cities[39] << 'LOWER GWYNEDD'; Zips['LOWER GWYNEDD'] << 19002
+Cities[39] << 'NORTH WALES'; Zips['NORTH WALES'] << 19454
+Cities[39] << 'PENLLYN'; Zips['PENLLYN'] << 19422
+Cities[39] << 'SPRING HOUSE'; Zips['SPRING HOUSE'] << 19477
+Cities[40] << 'ARDMORE'; Zips['ARDMORE'] << 19003
+Cities[40] << 'BALA CYNWYD'; Zips['BALA CYNWYD'] << 19004
+Cities[40] << 'BELMONT HILLS'; Zips['BELMONT HILLS'] << 19004
+Cities[40] << 'BRYN MAWR'; Zips['BRYN MAWR'] << 19010
+Cities[40] << 'GLADWYNE'; Zips['GLADWYNE'] << 19035
+Cities[40] << 'HAVERFORD'; Zips['HAVERFORD'] << 19041
+Cities[40] << 'HAVERTOWN'; Zips['HAVERTOWN'] << 19083
+Cities[40] << 'MERION STATION'; Zips['MERION STATION'] << 19066
+Cities[40] << 'NARBERTH'; Zips['NARBERTH'] << 19072
+Cities[40] << 'PENN VALLEY'; Zips['PENN VALLEY'] << 19072
+Cities[40] << 'ROSEMONT'; Zips['ROSEMONT'] << 19010
+Cities[40] << 'VILLANOVA'; Zips['VILLANOVA'] << 19085
+Cities[40] << 'WYNNEWOOD'; Zips['WYNNEWOOD'] << 19096
+Cities[41] << 'HUNTINGDON VALLEY'; Zips['HUNTINGDON VALLEY'] << 19006
+Cities[41] << 'MEADOWBROOK'; Zips['MEADOWBROOK'] << 19046
+Cities[42] << 'POTTSTOWN'; Zips['POTTSTOWN'] << 19464
+Cities[43] << 'AUDUBON'; Zips['AUDUBON'] << 19403
+Cities[43] << 'COLLEGEVILLE'; Zips['COLLEGEVILLE'] << 19426
+Cities[43] << 'EAGLEVILLE'; Zips['EAGLEVILLE'] << 19403
+Cities[43] << 'NORRISTOWN'; Zips['NORRISTOWN'] << 19403
+Cities[43] << 'PHOENIXVILLE'; Zips['PHOENIXVILLE'] << 19460
+Cities[43] << 'TROOPER'; Zips['TROOPER'] << 19403
+Cities[44] << 'GREEN LANE'; Zips['GREEN LANE'] << 18054
+Cities[44] << 'TELFORD'; Zips['TELFORD'] << 18969
+Cities[44] << 'TYLERSPORT'; Zips['TYLERSPORT'] << 18971
+Cities[45] << 'GREEN LANE'; Zips['GREEN LANE'] << 18054
+Cities[45] << 'PENNSBURG'; Zips['PENNSBURG'] << 18073
+Cities[45] << 'PERKIOMENVILLE'; Zips['PERKIOMENVILLE'] << 18074
+Cities[45] << 'SUMNEYTOWN'; Zips['SUMNEYTOWN'] << 18084
+Cities[46] << 'COLMAR'; Zips['COLMAR'] << 18915
+Cities[46] << 'LANSDALE'; Zips['LANSDALE'] << 19446
+Cities[46] << 'MONTGOMERYVILLE'; Zips['MONTGOMERYVILLE'] << 18936
+Cities[46] << 'NORTH WALES'; Zips['NORTH WALES'] << 19454
+Cities[47] << 'FREDERICK'; Zips['FREDERICK'] << 19435
+Cities[47] << 'GILBERTSVILLE'; Zips['GILBERTSVILLE'] << 19525
+Cities[47] << 'GREEN LANE'; Zips['GREEN LANE'] << 18054
+Cities[47] << 'PERKIOMENVILLE'; Zips['PERKIOMENVILLE'] << 18074
+Cities[47] << 'POTTSTOWN'; Zips['POTTSTOWN'] << 19464
+Cities[48] << 'COLLEGEVILLE'; Zips['COLLEGEVILLE'] << 19426
+Cities[48] << 'GRATERFORD'; Zips['GRATERFORD'] << 19426
+Cities[48] << 'RAHNS'; Zips['RAHNS'] << 19426
+Cities[48] << 'SCHWENKSVILLE'; Zips['SCHWENKSVILLE'] << 19473
+Cities[49] << 'CONSHOHOCKEN'; Zips['CONSHOHOCKEN'] << 19428
+Cities[49] << 'PLYMOUTH MEETING'; Zips['PLYMOUTH MEETING'] << 19462
+Cities[50] << 'HARLEYSVILLE'; Zips['HARLEYSVILLE'] << 19438
+Cities[50] << 'LEDERACH'; Zips['LEDERACH'] << 19450
+Cities[50] << 'SCHWENKSVILLE'; Zips['SCHWENKSVILLE'] << 19473
+Cities[50] << 'SOUDERTON'; Zips['SOUDERTON'] << 18964
+Cities[51] << 'COLLEGEVILLE'; Zips['COLLEGEVILLE'] << 19426
+Cities[51] << 'HARLEYSVILLE'; Zips['HARLEYSVILLE'] << 19438
+Cities[51] << 'SCHWENKSVILLE'; Zips['SCHWENKSVILLE'] << 19473
+Cities[51] << 'SKIPPACK'; Zips['SKIPPACK'] << 19474
+Cities[52] << 'ERDENHEIM'; Zips['ERDENHEIM'] << 19038
+Cities[52] << 'FLOURTOWN'; Zips['FLOURTOWN'] << 19031
+Cities[52] << 'FORT WASHINGTON'; Zips['FORT WASHINGTON'] << 19034
+Cities[52] << 'GLENSIDE'; Zips['GLENSIDE'] << 19038
+Cities[52] << 'LAFAYETTE HILL'; Zips['LAFAYETTE HILL'] << 19444
+Cities[52] << 'LAVEROCK'; Zips['LAVEROCK'] << 19038
+Cities[52] << 'NORTH HILLS'; Zips['NORTH HILLS'] << 19038
+Cities[52] << 'ORELAND'; Zips['ORELAND'] << 19075
+Cities[52] << 'WYNDMOOR'; Zips['WYNDMOOR'] << 19038
+Cities[53] << 'HARLEYSVILLE'; Zips['HARLEYSVILLE'] << 19438
+Cities[53] << 'HATFIELD'; Zips['HATFIELD'] << 19440
+Cities[53] << 'LANSDALE'; Zips['LANSDALE'] << 19446
+Cities[54] << 'ABINGTON'; Zips['ABINGTON'] << 19001
+Cities[54] << 'AMBLER'; Zips['AMBLER'] << 19002
+Cities[54] << 'ARDSLEY'; Zips['ARDSLEY'] << 19038
+Cities[54] << 'DRESHER'; Zips['DRESHER'] << 19025
+Cities[54] << 'FORT WASHINGTON'; Zips['FORT WASHINGTON'] << 19034
+Cities[54] << 'GLENSIDE'; Zips['GLENSIDE'] << 19038
+Cities[54] << 'MAPLE GLEN'; Zips['MAPLE GLEN'] << 19002
+Cities[54] << 'NORTH HILLS'; Zips['NORTH HILLS'] << 19038
+Cities[54] << 'ORELAND'; Zips['ORELAND'] << 19075
+Cities[54] << 'ROSLYN'; Zips['ROSLYN'] << 19001
+Cities[54] << 'WILLOW GROVE'; Zips['WILLOW GROVE'] << 19090
+Cities[55] << 'GREEN LANE'; Zips['GREEN LANE'] << 18054
+Cities[55] << 'OBELISK'; Zips['OBELISK'] << 19492
+Cities[55] << 'PERKIOMENVILLE'; Zips['PERKIOMENVILLE'] << 18074
+Cities[55] << 'SCHWENKSVILLE'; Zips['SCHWENKSVILLE'] << 19473
+Cities[55] << 'ZIEGLERVILLE'; Zips['ZIEGLERVILLE'] << 19492
+Cities[56] << 'LANSDALE'; Zips['LANSDALE'] << 19446
+Cities[56] << 'NORTH WALES'; Zips['NORTH WALES'] << 19454
+Cities[56] << 'WEST POINT'; Zips['WEST POINT'] << 19486
+Cities[57] << 'EAST GREENVILLE'; Zips['EAST GREENVILLE'] << 18041
+Cities[57] << 'PALM'; Zips['PALM'] << 18070
+Cities[57] << 'PENNSBURG'; Zips['PENNSBURG'] << 18073
+Cities[57] << 'RED HILL'; Zips['RED HILL'] << 18076
+Cities[58] << 'BRIDGEPORT'; Zips['BRIDGEPORT'] << 19405
+Cities[58] << 'CONSHOHOCKEN'; Zips['CONSHOHOCKEN'] << 19428
+Cities[58] << 'GULPH MILLS'; Zips['GULPH MILLS'] << 19406
+Cities[58] << 'GULPH MILLS'; Zips['GULPH MILLS'] << 19428
+Cities[58] << 'KING OF PRUSSIA'; Zips['KING OF PRUSSIA'] << 19406
+Cities[58] << 'RADNOR'; Zips['RADNOR'] << 19087
+Cities[58] << 'SWEDELAND'; Zips['SWEDELAND'] << 19406
+Cities[58] << 'WAYNE'; Zips['WAYNE'] << 19087
+Cities[58] << 'WEST CONSHOHOCKEN'; Zips['WEST CONSHOHOCKEN'] << 19428
+Cities[59] << 'HATBORO'; Zips['HATBORO'] << 19040
+Cities[59] << 'HUNTINGDON VALLEY'; Zips['HUNTINGDON VALLEY'] << 19006
+Cities[59] << 'WILLOW GROVE'; Zips['WILLOW GROVE'] << 19090
+Cities[60] << 'POTTSTOWN'; Zips['POTTSTOWN'] << 19464
+Cities[61] << 'COLLEGEVILLE'; Zips['COLLEGEVILLE'] << 19426
+Cities[61] << 'MONT CLARE'; Zips['MONT CLARE'] << 19453
+Cities[61] << 'OAKS'; Zips['OAKS'] << 19456
+Cities[61] << 'PHOENIXVILLE'; Zips['PHOENIXVILLE'] << 19460
+Cities[61] << 'ROYERSFORD'; Zips['ROYERSFORD'] << 19468
+Cities[62] << 'HARLEYSVILLE'; Zips['HARLEYSVILLE'] << 19438
+Cities[62] << 'SALFORDVILLE'; Zips['SALFORDVILLE'] << 18958
+Cities[62] << 'SCHWENKSVILLE'; Zips['SCHWENKSVILLE'] << 19473
+Cities[62] << 'TELFORD'; Zips['TELFORD'] << 18969
+Cities[62] << 'WOXALL'; Zips['WOXALL'] << 18979
+Cities[63] << 'EAGLEVILLE'; Zips['EAGLEVILLE'] << 19403
+Cities[63] << 'JEFFERSONVILLE'; Zips['JEFFERSONVILLE'] << 19403
+Cities[63] << 'NORRISTOWN'; Zips['NORRISTOWN'] << 19401
+Cities[63] << 'NORRISTOWN'; Zips['NORRISTOWN'] << 19403
+Cities[64] << 'POTTSTOWN'; Zips['POTTSTOWN'] << 19464
+Cities[64] << 'STOWE'; Zips['STOWE'] << 19464
+Cities[65] << 'AMBLER'; Zips['AMBLER'] << 19002
+Cities[65] << 'CONSHOHOCKEN'; Zips['CONSHOHOCKEN'] << 19428
+Cities[65] << 'FLOURTOWN'; Zips['FLOURTOWN'] << 19031
+Cities[65] << 'FORT WASHINGTON'; Zips['FORT WASHINGTON'] << 19034
+Cities[65] << 'LAFAYETTE HILL'; Zips['LAFAYETTE HILL'] << 19444
+Cities[65] << 'PLYMOUTH MEETING'; Zips['PLYMOUTH MEETING'] << 19462
+Cities[66] << 'AMBLER'; Zips['AMBLER'] << 19002
+Cities[66] << 'BLUE BELL'; Zips['BLUE BELL'] << 19422
+Cities[67] << 'COLLEGEVILLE'; Zips['COLLEGEVILLE'] << 19426
+Cities[67] << 'EAGLEVILLE'; Zips['EAGLEVILLE'] << 19403
+Cities[67] << 'LANSDALE'; Zips['LANSDALE'] << 19446
+Cities[67] << 'NORRISTOWN'; Zips['NORRISTOWN'] << 19403
+Cities[67] << 'WORCESTER'; Zips['WORCESTER'] << 19490
+
+1.upto(67) { |m| Cities[m].uniq!}
+Zips.keys.each { |k| Zips[k].uniq! }
