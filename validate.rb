@@ -1,9 +1,9 @@
-require_relative 'Engine/bing'
+require_relative 'Engine/google'
 require_relative 'DB/property'
 
 class Validate
   def initialize
-    @engine = Engine::Bing.new
+    @engine = Engine::Google.new
     @property = DB::Property.new
     @property.filter = @engine.property_filter
     @last_address = nil

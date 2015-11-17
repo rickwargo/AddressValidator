@@ -30,7 +30,7 @@ class Property
       FROM properties
       WHERE (zipcode IS NULL
         AND parcel_id NOT LIKE '__0000000000'
-        AND parcel_id LIKE '31__________')
+        AND parcel_id >= '610004848045')
         AND #{filter}
       }
   end
